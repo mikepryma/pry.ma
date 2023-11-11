@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>YAY!</title>
+	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="jwplayer.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+	<div id="container"></div>
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			jwplayer("container").setup({
+				flashplayer: "player.swf",
+				file: "avery.mp4",
+				height: 480,
+				width: 640,
+				autoplay: true
+			});
+
+			return false;
+		});
+
+
+	</script>
+</body>
+</html>

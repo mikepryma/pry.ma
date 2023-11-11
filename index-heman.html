@@ -1,0 +1,58 @@
+
+<!;doctype; html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>I HAVE THE POWERRR!</title>
+
+	<style>
+		* { margin: 0; padding: 0; }
+
+		#bg { position: fixed; top: 0; left: 0; }
+		.bgwidth { width: 100%; }
+		.bgheight { height: 100%; }
+
+		#page-wrap { position: relative; width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+		p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>
+			$(function() {
+
+				var theWindow        = $(window),
+				    $bg              = $("#bg"),
+				    aspectRatio      = $bg.width() / $bg.height();
+
+				function resizeBg() {
+
+					if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+					    $bg
+					    	.removeClass()
+					    	.addClass('bgheight');
+					} else {
+					    $bg
+					    	.removeClass()
+					    	.addClass('bgwidth');
+					}
+
+				}
+
+				theWindow.resize(function() {
+					resizeBg();
+				}).trigger("resize");
+
+			});
+	</script>
+
+</head>
+
+<body>
+
+	<img src="Images/mastersoftheuniverse.jpg" id="bg" alt="I HAVE THE POWERRRRRRRRRRR!">
+
+	<div id="page-wrap" style="visibility: hidden;">
+		<embed type="application/x-shockwave-flash" flashvars="audioUrl=http://nakedhobo.com/everything/sound/themes/heman-theme.mp3&amp;autoPlay=true" src="http://www.google.com/reader/ui/3523697345-audio-player.swf" width="400" height="27" quality="best" wmode="transparent"></embed>
+	</div>
+</body>
+</html>

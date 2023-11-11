@@ -1,0 +1,157 @@
+/* You'll need prefixes. @-ms-viewport, @-o-viewport, etc... */
+@viewport {
+    width: device-width;
+}
+
+body {
+	font: 1em/150% Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	background: #000000;
+	color: #f8f8f8;
+	background:url('/Images/baseball.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+a {
+	color: #669;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+#header {
+	height: 120px;
+}
+#content {
+	width: 600px;
+	float: left;
+}
+#sidebar {
+	width: 300px;
+	float: right;
+}
+#footer {
+	clear: both;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+	
+
+}
+
+/* for 480px or less */
+
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+	#blazersLogo {
+		width: 52.08333333333333%;
+		height: auto;
+	}
+
+}
+
+/* border & guideline */
+#content, #sidebar {
+	background: #1b1b1b;
+	color: #f8f8f8;
+	opacity:0.90;
+	filter:alpha(opacity=90);
+	padding: 0 0.5em;
+}
+
+#content {
+	
+}
+#sidebar {
+
+}
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+	
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+	border: none; /* solid 1px #ccc; */
+}
+
+#blazersLogo {
+ 	max-width: 100%;
+	height: auto;
+ 	
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #333; 
+  text-align: left; 
+}
+/*
+@media all and (max-width:640px) {
+    table,thead,tbody,tfoot,th,td,tr{display:block;}
+    tr+tr{margin-top:1em}
+    
+}
+*/

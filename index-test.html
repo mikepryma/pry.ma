@@ -1,0 +1,71 @@
+
+<!;doctype; html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Blazers</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+
+<link href="Styles/footable-0.1.css" rel="stylesheet" type="text/css" />
+<script src="Scripts/footable-0.1.js" type="text/javascript"></script>
+	
+<script type="text/javascript">
+	$("document").ready(function()  {  
+		$('#blazersgames > tbody').load('curl.php tr:contains("West Deane-2")',{},function() {
+			$('.footable').footable();
+		});
+			
+	});
+  
+</script>
+
+</head>
+
+<body>
+<div id="content"></div>
+<a class="twitter-timeline" data-dnt="false" href="https://twitter.com/search?q=batblazers" data-widget-id="323929564671774720">Tweets about "batblazers"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<table id="blazersgames" class="footable" data-filter="#filter">
+<thead>
+	<tr>
+      <th data-class="expand">
+        Day
+      </th>
+      <th>
+        Date
+      </th>
+      <th data-hide="phone">
+        Park
+      </th>
+      <th data-hide="phone">
+        Time
+      </th>
+      <th data-hide="phone,tablet">
+        Visitors
+      </th>
+      <th data-hide="phone,tablet">
+        W/L
+      </th>
+      <th data-hide="phone,tablet">
+        Home
+      </th>
+      <th data-hide="phone,tablet">
+        W/L
+      </th>
+      <th data-hide="phone,tablet">
+        Score
+      </th>
+      <th data-hide="phone,tablet">
+        Umpire
+      </th>
+    </tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>	
+
+</body>
+</html>
